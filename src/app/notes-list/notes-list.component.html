@@ -1,0 +1,13 @@
+<div class="notes" >
+    <input type="search" placeholder="Search" [(ngModel)] = "searchString" (input) = "onFilter()">
+    <a >
+    <app-note
+    style="cursor: pointer;"
+    *ngFor = "let note of notes; let i = index"
+    [note] = "note"
+    [index] = "i"
+    (click) = "onEditNote(note)"
+     ></app-note>
+    </a>
+    <button class="add" (click) = "onAddNote()" >+Add</button>
+  </div>

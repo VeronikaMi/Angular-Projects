@@ -1,0 +1,10 @@
+<div class="container new">
+    <label for="title">Title</label>
+    <input type="text" id="title" [(ngModel)] = "title">
+    <label for="note_text">Body</label>
+    <textarea name="desc" id="note_text" cols="30" rows="5" [(ngModel)] = "body"></textarea>
+    <div class="btn-group">
+        <button class="cancel" [routerLink] = "['/']">Cancel</button>
+        <button class="save" (click) = "onSaveNote()">Save</button>
+    </div>
+</div>

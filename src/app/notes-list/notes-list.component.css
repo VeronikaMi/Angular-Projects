@@ -1,0 +1,39 @@
+button.add{
+    cursor: pointer;
+    /* position: absolute;
+    right:50%;
+    transform: translate(50%,0); */
+    bottom: 0;
+    position: fixed;
+    background-color: #a2a2f8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    padding: 20px 150px;
+}
+
+.notes {
+    overflow-y:auto;
+    height: 100%;
+    margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    align-items: center; 
+    padding-bottom: 80px;
+}
+
+input[type = search]{
+    border: none;
+    background-color: #eee;
+    font-size: 16px;
+    padding: 10px;
+    width:340px;
+}
+
+input[type = search]:focus {
+    outline: none;
+    
+}
+
